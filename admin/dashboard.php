@@ -37,38 +37,30 @@ session_start();
                             </ul>
                         </li>
                         <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-2 mt-3 align-middle text-white">
+                            <a href="categories/danhsach.php" class="nav-link px-2 mt-3 align-middle text-white">
                                 <i class="fs-5 fa-solid fa-rectangle-list"></i><span class="ms-1 d-none d-sm-inline fw-bold">Danh mục</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
-                                </li>
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-2 mt-3 align-middle text-white">
-                                <i class="fs-5 fa-solid fa-tag"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Hãng</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
-                                </li>
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
                             <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-2 mt-3 align-middle text-white">
                                 <i class="fs-5 fab fa-product-hunt"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Sản Phẩm</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="/members/danhsach.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                    <a href="products/danhsach.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>
                                 <li class="w-100">
-                                    <a href="/members/them.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
+                                    <a href="products/them.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-2 mt-3 align-middle text-white">
+                                <i class="fs-5 fa-solid fa-newspaper"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Tin tức</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="news/danhsach.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                </li>
+                                <li class="w-100">
+                                    <a href="news/them.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
                                 </li>
                             </ul>
                         </li>
@@ -194,7 +186,7 @@ session_start();
         </div>
     </div>
     <?php
-    }else echo "<h1>Please login first .</h1>";
+    }else echo "<h1>Hãy đăng nhập trước!</h1>";
     ?>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
