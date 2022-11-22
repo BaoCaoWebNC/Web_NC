@@ -7,7 +7,7 @@
         $result = mysqli_query($conn,$query);
         $row  = mysqli_fetch_array($result);
         if(is_array($row)) {
-            if($row['quyen_truy_cap'] == 2){
+            if($row['quyen_truy_cap'] > 0){
                 $_SESSION["id"] = $row['id_thanhvien'];
                 $_SESSION["name"] = $row['ten'];
             }else {

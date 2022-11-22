@@ -22,6 +22,7 @@
     else 
     {//Lỗỉ
         $result = "Cập nhật không thành công!" . mysqli_error($conn);
+        echo "<script type='text/javascript'>alert('$result');</script>";
     }
     mysqli_close($conn);
 ?>

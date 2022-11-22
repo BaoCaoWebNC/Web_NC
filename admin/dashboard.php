@@ -29,26 +29,26 @@ session_start();
                                 <i class="fs-5 fa-solid fa-user"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Thành Viên</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="members/danhsach.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                    <a href="members/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>
                                 <li class="w-100">
-                                    <a href="members/them.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
+                                    <a href="members/them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <a href="categories/danhsach.php" class="nav-link px-2 mt-3 align-middle text-white">
-                                <i class="fs-5 fa-solid fa-rectangle-list"></i><span class="ms-1 d-none d-sm-inline fw-bold">Danh mục</span> </a>
+                                <i class="fs-5 fa-solid fa-rectangle-list"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Danh mục</span> </a>
                         </li>
                         <li>
                             <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-2 mt-3 align-middle text-white">
                                 <i class="fs-5 fab fa-product-hunt"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Sản Phẩm</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="products/danhsach.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                    <a href="products/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>
                                 <li class="w-100">
-                                    <a href="products/them.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
+                                    <a href="products/them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>
                                 </li>
                             </ul>
                         </li>
@@ -57,10 +57,10 @@ session_start();
                                 <i class="fs-5 fa-solid fa-newspaper"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Tin tức</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="news/danhsach.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                    <a href="news/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>
                                 <li class="w-100">
-                                    <a href="news/them.php" class="nav-link px-4"> <span class="d-none d-sm-inline">Thêm mới</span></a>
+                                    <a href="news/them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>
                                 </li>
                             </ul>
                         </li>

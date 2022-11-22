@@ -16,11 +16,33 @@ session_start();
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
-    <title>Admin | Danh mục</title>
+    <title>Admin | Thêm thành viên</title>
 </head>
 <body>
     <?php
     if($_SESSION["name"]) {
+    ?>
+    <?php
+        require "../../config/dbConnection.php";
+        if (isset($_POST["sbm"]))
+        {
+            //Lăy dữ Liệu trên form => Lưu vào bỉển
+            $ten = $_POST["ten"];
+            $taikhoan = $_POST["tai_khoan"];
+            $matkhau = $_POST["mat_khau"];
+            $quyen = $_POST["quyen"];
+            $sql = "INSERT INTO thanhvien (ten, tai_khoan, mat_khau, quyen_truy_cap) VALUES ('$ten','$taikhoan','$matkhau','$quyen')";
+            if (mysqli_query($conn, $sql))
+            {
+                header('location:danhsach.php');
+            }
+            else {//Lỗỉ
+                $result = "Lỗi thêm mới" . mysqli_error($conn);
+                echo "<script type='text/javascript'>alert('$result');</script>";
+            }
+        }
+        
+        mysqli_close($conn);
     ?>
     <div class="container-fluid">
         <div class="row flex-nowrap">
@@ -35,15 +57,15 @@ session_start();
                                 <i class="fs-5 fa-solid fa-user"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Thành Viên</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="../members/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                    <a href="danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>
                                 <li class="w-100">
-                                    <a href="../members/them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>
+                                    <a href="them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="danhsach.php" class="nav-link px-2 mt-3 align-middle text-white">
+                            <a href="../categories/danhsach.php" class="nav-link px-2 mt-3 align-middle text-white">
                                 <i class="fs-5 fa-solid fa-rectangle-list"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Danh mục</span> </a>
                         </li>
                         <li>
@@ -89,90 +111,47 @@ session_start();
                 </div>
             </div>
             <div class="col py-3">
-                <div>
-                    <h3>DANH MỤC SẢN PHẨM</h3>
-                    <div class="card-body">
-                        <form action ="them.php" method="POST" autocomplete="off">
-                            <label for="tendm">Tên danh mục:</label>
-                            <input type="text" name="ten_dm" class="form-control" id="tendm" require>
-                            <button name="sbm" class="btn btn-primary my-2" type="submit">Thêm</button>
-                        </form>
-                    </div>
-                </div>
                 <?php
-                    require "../../config/dbConnection.php";
-                    $sql = "SELECT * FROM dmsanpham";
-                    $query = mysqli_query($conn, $sql);
+                    if($_SESSION["quyen"] == 2) {
                 ?>
-                <table class="table table-striped table-bordered" id="sortTable">       
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Tên danh mục</th>
-                            <th>Tác vụ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            while($row = mysqli_fetch_assoc($query)){ 
-                        ?>
-                        <tr>
-                            <td><?php echo $row['id_dm']; ?></td>
-                            <td><?php echo $row['ten_dm']; ?></td>
-                            <td>
-                                <button href="" class = "btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal" data-whatever="<?php echo $row['id_dm']; ?>">Sửa</button>
-                                <a href="xoa.php?id_dm=<?php echo $row['id_dm']; ?>" onclick="return confirm('Bạn có muốn xóa thông tin này không?');" class = "btn btn-primary">Xóa</a>
-                            </td>
-                        </tr>
-                        <?php 
-                            }
-                            mysqli_close($conn);
-                        ?>
-                    </tbody>
-                </table>
-                <script>
-                $('#sortTable').DataTable();
-                </script>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="updateModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sửa danh mục</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div>
+                    <h3>THÊM THÀNH VIÊN</h3>
                 </div>
-                <div class="modal-body">
-                    <form action ="sua.php" method="POST" autocomplete="off">
-                    <div class="mb-3">
-                        <label for="txt_id_dm" class="col-form-label">ID:</label>
-                        <input type="text" name="txt_id_dm" class="form-control id-input" id="txt_id_dm" readonly = "readonly">
-                    </div>
-                    <div class="mb-3">
-                        <label for="txt_ten_dm" class="col-form-label">Tên danh mục mới:</label>
-                        <input type="text" name="txt_ten_dm" id="txt_ten_dm" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <input onclick="return confirm('Bạn có muốn sửa thông tin này không?');" class = "btn btn-primary" type = "submit" name = "btnSave" value = "Lưu">
-                    </div>
+                <div class="card-body">
+                    <form method="POST" autocomplete="off">
+                        <div class="form-group">
+                            <label for="">Tên thành viên</label>
+                            <input type="text" name="ten" class="form-control" require>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Tài khoản</label> <br>
+                            <input type="text" name="tai_khoan" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Mật khẩu</label>
+                            <input type="password" name="mat_khau" class="form-control" require>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Quyền</label><br>
+                            <input type = "radio" id = "quyen_0" name = "quyen" value = "0"> Thành viên
+                            <br>
+                            <input type = "radio" id = "quyen_l" name = "quyen" value = "1"> Quản trị viên
+                        </div>
+                        <button name="sbm" class="btn btn-primary" type="submit">Thêm</button>
                     </form>
                 </div>
+                <?php
+                }else echo "<h1>Bạn không đủ quyền làm việc này</h1>";
+                ?>
             </div>
         </div>
     </div>
     <?php
     }else echo "<h1>Hãy đăng nhập trước!</h1>";
     ?>
-    <script>
-        $(document).ready(function(){
-            $('#updateModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget);
-            var id = button.data('whatever');
-            $('#txt_id_dm').val(id);
-            })
-        })
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>

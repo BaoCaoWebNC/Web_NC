@@ -12,6 +12,7 @@
     }
     else {//Lỗỉ
         $result = "Lỗi thêm mới" . mysqli_error($conn);
+        echo "<script type='text/javascript'>alert('$result');</script>";
     }
     mysqli_close($conn);
 ?>
