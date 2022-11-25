@@ -20,7 +20,7 @@ session_start();
 </head>
 <body>
     <?php
-    if($_SESSION["name"]) {
+    if(isset($_SESSION["name"])) {
     ?>
     <?php
         require "../../config/dbConnection.php";

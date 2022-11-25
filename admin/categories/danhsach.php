@@ -20,7 +20,7 @@ session_start();
 </head>
 <body>
     <?php
-    if($_SESSION["name"]) {
+    if(isset($_SESSION["name"])) {
     ?>
     <div class="container-fluid">
         <div class="row flex-nowrap">
