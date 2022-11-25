@@ -17,14 +17,14 @@
 	<div class="top-down">
 		<div class="content-top-down">
 			<ul>
-				<li><a href="../user/index.html"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
+				<li><a href="../user/index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
 				<li id="address-form"><a href="#">Hà Nội<i class="fas fa-sort-down"></i></a></li>
 				<li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
 				<li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
 				<li><a href="">Lịch sử <br>đơn hàng</a></li>
 				<li><a href="">Mua thẻ nạp ngay!</a></li>
-				<li><a href="../user/hoidap24h.html">24h công nghệ</a></li>
-				<li><a href="../user/hoidap.html">Hỏi đáp</a></li>
+				<li><a href="../user/hoidap24h.php">24h công nghệ</a></li>
+				<li><a href="../user/hoidap.php">Hỏi đáp</a></li>
 				<li><a href="">Game App</a></li>
 			</ul>
 		</div>
@@ -34,7 +34,7 @@
 		<div class="menu-bar-content">
 			<ul class="main-menu">
 				<li>
-					<a href="../user/iphone.html">
+					<a href="../user/iphone.php">
 						<i><img src="../pictures/icon/icon-phone-96x96-2.png"></i>
 						<span>Điện thoại<span>
 					</a>
@@ -76,17 +76,17 @@
 					</a>
 				</li>
 				<li>
-					<a href="../user/contact.html">
+					<a href="../user/contact.php">
 						<span>Contact<span>
 					</a>
 				</li>
 				<li>
-					<a href="../user/login.html" alt="">
+					<a href="../user/login.php" alt="">
 						<span>Đăng nhập<span>
 					</a>
 				</li>
 				<li>
-					<a href="../user/dangky.html" alt="">
+					<a href="../user/dangky.php" alt="">
 						<span>Đăng ký<span>
 					</a>
 				</li>
@@ -116,7 +116,7 @@
 			</div>
 			<a class="forget" href="#">Quên mật khẩu</a>
 			<input type="submit" value="Đăng nhập"  class="form-submit">
-			<a class="registration" href="../user/dangky.html">Đăng ký</a>
+			<a class="registration" href="../user/dangky.php">Đăng ký</a>
 		</form>
 	</div>
 	<footer>
@@ -133,9 +133,9 @@
 				  <h3>Quick Links</h3>
 				  <nav>
 					<ul>
-					  <li><a href="../user/index.html">Home</a></li>
-					  <li><a href="../user/iphone.html">Điện thoại</a></li>
-					  <li><a href="../user/hoidap24h.html">Tin tức</a></li>
+					  <li><a href="../user/index.php">Home</a></li>
+					  <li><a href="../user/iphone.php">Điện thoại</a></li>
+					  <li><a href="../user/hoidap24h.php">Tin tức</a></li>
 					</ul>
 				  </nav>
 				</div>
