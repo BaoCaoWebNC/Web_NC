@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="./themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
 	<title>Trang chủ</title>
@@ -13,20 +13,21 @@
 <body>
 	<div class="container">
 		<div class="top">
-			<img src="../pictures/banner/1200-44-1200x44-9.png" alt="">
+			<img src="pictures/banner/1200-44-1200x44-9.png" alt="">
 		</div>
 		<div class="top-down">
 			<div class="content-top-down">
 				<ul>
-					<li><a href="../user/index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
+					<li><a href="user/index.php"><img style="width: 75px; " src="pictures/icon/logo_1.png" alt=""></a></li>
 					<li id="address-form"><a href="#">Hà Nội<i class="fas fa-sort-down"></i></a></li>
 					<li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
 					<li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
 					<li><a href="">Lịch sử <br>đơn hàng</a></li>
 					<li><a href="">Mua thẻ nạp ngay!</a></li>
-					<li><a href="../user/hoidap24h.php">24h công nghệ</a></li>
-					<li><a href="../user/hoidap.php">Hỏi đáp</a></li>
+					<li><a href="user/hoidap24h.php">24h công nghệ</a></li>
+					<li><a href="user/hoidap.php">Hỏi đáp</a></li>
 					<li><a href="">Game App</a></li>
+					<li><a href="admin">Admin</a></li>
 				</ul>
 			</div>
 		</div>
@@ -35,59 +36,59 @@
 			<div class="menu-bar-content">
 				<ul class="main-menu">
 					<li>
-						<a href="../user/iphone.php">
-							<i><img src="../pictures/icon/icon-phone-96x96-2.png"></i>
+						<a href="user/iphone.php">
+							<i><img src="pictures/icon/icon-phone-96x96-2.png"></i>
 							<span>Điện thoại<span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="../pictures/icon/icon-laptop-96x96-1.png"></i>
+							<i><img src="pictures/icon/icon-laptop-96x96-1.png"></i>
 							<span>Laptop<span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="../pictures/icon/icon-tablet-96x96-1.png"></i>
+							<i><img src="pictures/icon/icon-tablet-96x96-1.png"></i>
 							<span>Tablet<span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="../pictures/icon/icon-phu-kien-96x96-1.png"></i>
+							<i><img src="pictures/icon/icon-phu-kien-96x96-1.png"></i>
 							<span>Phụ kiện<span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="../pictures/icon/icon-smartwatch-96x96-1.png"></i>
+							<i><img src="pictures/icon/icon-smartwatch-96x96-1.png"></i>
 							<span>Smartwatch<span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="../pictures/icon/icon-avaji-96x96-1.png"></i>
+							<i><img src="pictures/icon/icon-avaji-96x96-1.png"></i>
 							<span>AVAJi<span>
 						</a>
 					</li>
 					<li>
 						<a href="">
-							<i><img src="../pictures/icon/icon-pc-96x96.png"></i>
+							<i><img src="pictures/icon/icon-pc-96x96.png"></i>
 							<span>PC, Máy in<span>
 						</a>
 					</li>
 					<li>
-						<a href="../user/contact.php">
+						<a href="user/contact.php">
 							<span>Contact<span>
 						</a>
 					</li>
 					<li>
-						<a href="../user/login.php" alt="">
+						<a href="user/login.php" alt="">
 							<span>Đăng nhập<span>
 						</a>
 					</li>
 					<li>
-						<a href="../user/dangky.php" alt="">
+						<a href="user/dangky.php" alt="">
 							<span>Đăng ký<span>
 						</a>
 					</li>
@@ -102,9 +103,9 @@
 			</div>
 			<div class="slider-product-one-content-items">
 				<div class="slider-product-one-content-item">
-					<img src="../pictures/ip/ip12prm-xanh-duong-600x600-600x600.jpg" alt="">
+					<img src="pictures/products/ip12prm-xanh-duong-600x600-600x600.jpg" alt="">
 					<div class="slider-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon2-50x50.png" alt=""><p>LỖI 1 ĐỔI 1</p></li>
+						<li><img src="pictures/icon/icon2-50x50.png" alt=""><p>LỖI 1 ĐỔI 1</p></li>
 						<li>Iphone 12 Pro Max 256G</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">28.990.000<sup>đ<sup></a><span>-6%</span></li>
@@ -120,9 +121,9 @@
 					</div>
 				</div>
 				<div class="slider-product-one-content-item">
-					<img src="../pictures/ip/ip13prm-sierra-blue-600x600.jpg" alt="">
+					<img src="pictures/products/ip13prm-sierra-blue-600x600.jpg" alt="">
 					<div class="slider-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>XẢ KHO MẠNH</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>XẢ KHO MẠNH</p></li>
 						<li>Iphone 13 Pro 512G</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">40.990.000<sup>đ<sup></a><span>-7%</span></li>
@@ -138,9 +139,9 @@
 					</div>
 				</div>
 				<div class="slider-product-one-content-item">
-					<img src="../pictures/ip/ip13prm-gold-1-600x600.jpg" alt="">
+					<img src="pictures/products/ip13prm-gold-1-600x600.jpg" alt="">
 					<div class="slider-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon6-50x50.png" alt=""><p>VNPAY GIẢM 2%</p></li>
+						<li><img src="pictures/icon/icon6-50x50.png" alt=""><p>VNPAY GIẢM 2%</p></li>
 						<li>Iphone 13 Pro Max 256G</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">36.990.000<sup>đ<sup></a><span>-10%</span></li>
@@ -156,9 +157,9 @@
 					</div>
 				</div>
 				<div class="slider-product-one-content-item">
-					<img src="../pictures/ss/Galaxy-S22-Ultra-Burgundy-600x600.jpg" alt="">
+					<img src="pictures/products/Galaxy-S22-Ultra-Burgundy-600x600.jpg" alt="">
 					<div class="slider-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon4-50x50.png" alt=""><p>QUÀ HẤP DẪN</p></li>
+						<li><img src="pictures/icon/icon4-50x50.png" alt=""><p>QUÀ HẤP DẪN</p></li>
 						<li>Samsung Glx S22 Ultra 5G</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">32.990.000<sup>đ<sup></a><span>-15%</span></li>
@@ -174,9 +175,9 @@
 					</div>
 				</div>
 				<div class="slider-product-one-content-item">
-					<img src="../pictures/ss/Samsung-Galaxy-Z-Flip-3-600x600.jpg" alt="">
+					<img src="pictures/products/Samsung-Galaxy-Z-Flip-3-600x600.jpg" alt="">
 					<div class="slider-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon4-50x50.png" alt=""><p>TUẦN LỄ GOLD</p></li>
+						<li><img src="pictures/icon/icon4-50x50.png" alt=""><p>TUẦN LỄ GOLD</p></li>
 						<li>Samsung Galaxy Z Flip 3</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">30.990.000<sup>đ<sup></a><span>-25%</span></li>
@@ -208,9 +209,9 @@
 			</div>
 			<div class="product-gallery-one-content-product">
 				<div class="product-gallery-one-content-product-item">
-					<img src="../pictures/ip/ipSE-2022-white-600x600.jpg" alt="">
+					<img src="pictures/products/ipSE-2022-white-600x600.jpg" alt="">
 					<div class="product-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>GIẢM SỐC LỚN</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>GIẢM SỐC LỚN</p></li>
 						<li>iPhone SE 2022 White</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">12.990.000<sup>đ<sup></a><span>-2%</span></li>
@@ -226,9 +227,9 @@
 					</div>
 				</div>
 				<div class="product-gallery-one-content-product-item">
-					<img src="../pictures/ip/ip11-xanhla-600x600.jpg" alt="">
+					<img src="pictures/products/ip11-xanhla-600x600.jpg" alt="">
 					<div class="product-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>XẢ KHO MẠNH</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>XẢ KHO MẠNH</p></li>
 						<li>iPhone 11 Green 128GB</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">14.990.000<sup>đ<sup></a><span>-8%</span></li>
@@ -244,9 +245,9 @@
 					</div>
 				</div>
 				<div class="product-gallery-one-content-product-item">
-					<img src="../pictures/ip/ip12pro-xam-new-600x600-600x600.jpg" alt="">
+					<img src="pictures/products/ip12pro-xam-new-600x600-600x600.jpg" alt="">
 					<div class="product-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon6-50x50.png" alt=""><p>VNPAY GIẢM 2%</p></li>
+						<li><img src="pictures/icon/icon6-50x50.png" alt=""><p>VNPAY GIẢM 2%</p></li>
 						<li>iPhone 12 Pro 256G</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">30.990.000<sup>đ<sup></a><span>-15%</span></li>
@@ -262,9 +263,9 @@
 					</div>
 				</div>
 				<div class="product-gallery-one-content-product-item">
-					<img src="../pictures/ip/ip13-red-1-600x600.jpg" alt="">
+					<img src="pictures/products/ip13-red-1-600x600.jpg" alt="">
 					<div class="product-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>GIẢM 3 TRIỆU</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>GIẢM 3 TRIỆU</p></li>
 						<li>iPhone 13 Red 512GB</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">24.990.000<sup>đ<sup></a><span>-10%</span></li>
@@ -280,9 +281,9 @@
 					</div>
 				</div>
 				<div class="product-gallery-one-content-product-item">
-					<img src="../pictures/ip/ip13prm-gold-1-600x600.jpg" alt="">
+					<img src="pictures/products/ip13prm-gold-1-600x600.jpg" alt="">
 					<div class="product-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon4-50x50.png" alt=""><p>TUẦN LỄ GOLD</p></li>
+						<li><img src="pictures/icon/icon4-50x50.png" alt=""><p>TUẦN LỄ GOLD</p></li>
 						<li>iPhone 13 Pro Max 256G</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">33.990.000<sup>đ<sup></a><span>-8%</span></li>
@@ -308,9 +309,9 @@
 			</div>
 			<div class="suggestions-product-one-content-items">
 				<div class="suggestions-product-one-content-item">
-					<img src="../pictures/ip/iphone-13-starlight-1-600x600.jpg" alt="">
+					<img src="pictures/products/iphone-13-starlight-1-600x600.jpg" alt="">
 					<div class="suggestions-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>GIẢM SỐC LỚN</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>GIẢM SỐC LỚN</p></li>
 						<li>iPhone 13 Starlight</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">24.990.000<sup>đ<sup></a><span>-10%</span></li>
@@ -326,9 +327,9 @@
 					</div>
 				</div>
 				<div class="suggestions-product-one-content-item">
-					<img src="../pictures/ss/samsung-galaxy-z-flip-3-(6).jpg" alt="">
+					<img src="pictures/products/samsung-galaxy-z-flip-3-(6).jpg" alt="">
 					<div class="suggestions-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>XẢ KHO MẠNH</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>XẢ KHO MẠNH</p></li>
 						<li>Samsung Glx Z Flip 3</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">24.990.000<sup>đ<sup></a><span>-20%</span></li>
@@ -344,9 +345,9 @@
 					</div>
 				</div>
 				<div class="suggestions-product-one-content-item">
-					<img src="../pictures/ss/samsung-galaxy-note-20-062220-122200-fix-600x600.jpg" alt="">
+					<img src="pictures/products/samsung-galaxy-note-20-062220-122200-fix-600x600.jpg" alt="">
 					<div class="suggestions-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon6-50x50.png" alt=""><p>VNPAY GIẢM 2%</p></li>
+						<li><img src="pictures/icon/icon6-50x50.png" alt=""><p>VNPAY GIẢM 2%</p></li>
 						<li>Samsung Glx Note 20</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">23.990.000<sup>đ<sup></a><span>-33%</span></li>
@@ -362,9 +363,9 @@
 					</div>
 				</div>
 				<div class="suggestions-product-one-content-item">
-					<img src="../pictures/ss/samsung-galaxy-s21-trang-600x600.jpg" alt="">
+					<img src="pictures/products/samsung-galaxy-s21-trang-600x600.jpg" alt="">
 					<div class="suggestions-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>GIẢM 3 TRIỆU</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>GIẢM 3 TRIỆU</p></li>
 						<li>Samsung Galaxy S21</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">15.990.000<sup>đ<sup></a><span>-31%</span></li>
@@ -380,9 +381,9 @@
 					</div>
 				</div>
 				<div class="suggestions-product-one-content-item">
-					<img src="../pictures/ss/Samsung-Galaxy-Z-Flip-3-600x600.jpg" alt="">
+					<img src="pictures/products/Samsung-Galaxy-Z-Flip-3-600x600.jpg" alt="">
 					<div class="suggestions-product-one-content-item-text">
-						<li><img src="../pictures/icon/icon4-50x50.png" alt=""><p>TUẦN LỄ GOLD</p></li>
+						<li><img src="pictures/icon/icon4-50x50.png" alt=""><p>TUẦN LỄ GOLD</p></li>
 						<li>Samsung Galaxy Z Flip 3</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">24.990.000<sup>đ<sup></a><span>-20%</span></li>
@@ -409,14 +410,14 @@
 					<li><a href="">Apple</a></li>
 					<li><a href="">SamSung</a></li>
 					<li><a href="">XiAoMi</a></li>
-					<li><a href="./dsSP.php">Xem tất cả</a></li>
+					<li><a href="user/dsSP.php">Xem tất cả</a></li>
 				</ul>
 			</div>
 			<div class="coming-gallery-one-content-product">
 				<div class="coming-gallery-one-content-product-item">
-					<img src="../pictures/smw/garmin-fenix-6-pro-solar-day-silicone-thumb-1-1-600x600.jpg" alt="">
+					<img src="pictures/products/garmin-fenix-6-pro-solar-day-silicone-thumb-1-1-600x600.jpg" alt="">
 					<div class="coming-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
 						<li>Garmin Fenix 6 Pro Solar</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">21.490.000<sup>đ<sup></a><span>-35%</span></li>
@@ -432,9 +433,9 @@
 					</div>
 				</div>
 				<div class="coming-gallery-one-content-product-item">
-					<img src="../pictures/smw/samsung-galaxy-watch-4-classic-42mm-trang-thumb-1-2-3-600x600.jpg" alt="">
+					<img src="pictures/products/samsung-galaxy-watch-4-classic-42mm-trang-thumb-1-2-3-600x600.jpg" alt="">
 					<div class="coming-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
 						<li>Samsung Galaxy Watch 4 Classic 42mm</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">8.490.000<sup>đ<sup></a><span>-29%</span></li>
@@ -450,9 +451,9 @@
 					</div>
 				</div>
 				<div class="coming-gallery-one-content-product-item">
-					<img src="../pictures/smw/samsung-galaxy-watch-4-classic-46mm-bac-thumb-01-1-600x600.jpg" alt="">
+					<img src="pictures/products/samsung-galaxy-watch-4-classic-46mm-bac-thumb-01-1-600x600.jpg" alt="">
 					<div class="coming-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon6-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
+						<li><img src="pictures/icon/icon6-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
 						<li>Samsung Galaxy Watch 4 Classic 46mm</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">8.990.000<sup>đ<sup></a><span>-27%</span></li>
@@ -468,9 +469,9 @@
 					</div>
 				</div>
 				<div class="coming-gallery-one-content-product-item">
-					<img src="../pictures/smw/mi-band-6-thumb-1-1-600x600.jpg" alt="">
+					<img src="pictures/products/mi-band-6-thumb-1-1-600x600.jpg" alt="">
 					<div class="coming-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon1-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
+						<li><img src="pictures/icon/icon1-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
 						<li>Xiaomi Mi Band 6</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">1.129.000<sup>đ<sup></a><span>-26%</span></li>
@@ -486,9 +487,9 @@
 					</div>
 				</div>
 				<div class="coming-gallery-one-content-product-item">
-					<img src="../pictures/smw/apple-watch-s7-gps-45mm-den-thumb-660x600.jpg" alt="">
+					<img src="pictures/products/apple-watch-s7-gps-45mm-den-thumb-660x600.jpg" alt="">
 					<div class="coming-gallery-one-content-product-item-text">
-						<li><img src="../pictures/icon/icon4-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
+						<li><img src="pictures/icon/icon4-50x50.png" alt=""><p>ĐẶT NGAY</p></li>
 						<li>Apple Watch Series 7 GPS 45mm</li>
 						<li>Online giá rẻ</li>
 						<li><a href="">12.990.000<sup>đ<sup></a><span>-10%</span></li>
@@ -523,9 +524,9 @@
 				  <h3>Quick Links</h3>
 				  <nav>
 					<ul>
-					  <li><a href="../user/index.php">Home</a></li>
-					  <li><a href="../user/iphone.php">Điện thoại</a></li>
-					  <li><a href="../user/hoidap24h.php">Tin tức</a></li>
+					  <li><a href="user/index.php">Home</a></li>
+					  <li><a href="user/iphone.php">Điện thoại</a></li>
+					  <li><a href="user/hoidap24h.php">Tin tức</a></li>
 					</ul>
 				  </nav>
 				</div>

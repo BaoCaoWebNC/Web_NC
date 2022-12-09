@@ -18,7 +18,7 @@
 		<div class="top-down">
 			<div class="content-top-down">
 				<ul>
-					<li><a href="../user/index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
+					<li><a href="../index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
 					<li id="address-form"><a href="#">Hà Nội<i class="fas fa-sort-down"></i></a></li>
 					<li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
 					<li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
@@ -184,7 +184,7 @@
 						<div class="grid__row">
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone-13-pro-family-hero_2_1_1_1.png);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone-13-pro-family-hero_2_1_1_1.png);" ></div>
 									<h4 class="home-product-item__name">iPhone 13 Pro 128GB - Xanh lá</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">31.990.000₫</span>
@@ -208,7 +208,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone-se-midnight-select-2022031_1.jpg);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone-se-midnight-select-2022031_1.jpg);" ></div>
 									<h4 class="home-product-item__name">iPhone SE 2022 128GB</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">13.990.000₫</span>
@@ -232,7 +232,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone_12_pro_blue.png);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone_12_pro_blue.png);" ></div>
 									<h4 class="home-product-item__name">iPhone 12 Pro Max 512GB</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">42.990.000₫</span>
@@ -256,7 +256,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone-se-red-select-20220322_1_1.jpg);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone-se-red-select-20220322_1_1.jpg);" ></div>
 									<h4 class="home-product-item__name">iPhone SE 2022 256GB</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">16.990.000₫</span>
@@ -280,7 +280,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone_13_green_pure_back_iphone_13_green_pure_front_2-up_screen__usen_1_1.png);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone_13_green_pure_back_iphone_13_green_pure_front_2-up_screen__usen_1_1.png);" ></div>
 									<h4 class="home-product-item__name">iPhone 13 256GB - Xanh lá</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">27.990.000₫</span>
@@ -304,7 +304,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ss/cs_galaxy-z-fold3-kv_5g__1p_cmyk_1.jpg);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/cs_galaxy-z-fold3-kv_5g__1p_cmyk_1.jpg);" ></div>
 									<h4 class="home-product-item__name">Samsung Galaxy Z</br>Fold3 5G 512GB</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">44.990.000₫</span>
@@ -328,7 +328,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone_11_white.png);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone_11_white.png);" ></div>
 									<h4 class="home-product-item__name">iPhone 11 64GB</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">18.000.000₫</span>
@@ -352,7 +352,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ss/cs_9n9a0923-2.png);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/cs_9n9a0923-2.png);" ></div>
 									<h4 class="home-product-item__name">Galaxy Z Flip3 5G</br>Flex Your Way 2022</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">24.990.000₫</span>
@@ -376,7 +376,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone_12_mini_purple.png);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone_12_mini_purple.png);" ></div>
 									<h4 class="home-product-item__name">iPhone 12 mini 128GB</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">20.990.000₫</span>
@@ -400,7 +400,7 @@
 							</div>
 							<div class="grid__column-2-4">
 								<div class="home-product-item">
-									<div class="home-product-item__img" style="background-image: url(../pictures/ip/iphone_13-_pro-5.jpg);" ></div>
+									<div class="home-product-item__img" style="background-image: url(../pictures/products/iphone_13-_pro-5.jpg);" ></div>
 									<h4 class="home-product-item__name">iPhone 13 Pro Max 128GB</br>Chính hãng VN/A</h4>
 									<div class="home-product-item__price">
 										<span class="home-product-item__price-old">34.990.000₫</span>
@@ -443,7 +443,7 @@
 				  <h3>Quick Links</h3>
 				  <nav>
 					<ul>
-					  <li><a href="../user/index.php">Home</a></li>
+					  <li><a href="../index.php">Home</a></li>
 					  <li><a href="../user/iphone.php">Điện thoại</a></li>
 					  <li><a href="../user/hoidap24h.php">Tin tức</a></li>
 					</ul>

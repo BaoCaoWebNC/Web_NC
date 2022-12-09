@@ -18,7 +18,7 @@
 		<div class="top-down">
 			<div class="content-top-down">
 				<ul>
-					<li><a href="../user/index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
+					<li><a href="../index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
 					<li id="address-form"><a href="#">Hà Nội<i class="fas fa-sort-down"></i></a></li>
 					<li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
 					<li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>

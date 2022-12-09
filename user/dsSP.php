@@ -18,7 +18,7 @@
 	<div class="top-down">
 		<div class="content-top-down">
 			<ul>
-				<li><a href="../user/index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
+				<li><a href="../index.php"><img style="width: 75px; " src="../pictures/icon/logo_1.png" alt=""></a></li>
 				<li id="address-form"><a href="#">Hà Nội<i class="fas fa-sort-down"></i></a></li>
 				<li><input type="text" placeholder="Bạn tìm gì..."><i class="fas fa-search"></i></li>
 				<li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
@@ -103,7 +103,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/apple-watch-s6-lte-40mm-vien-thep-day-cao-su-den-thumb-600x600.png" alt="">
+							<img src="../pictures/products/apple-watch-s6-lte-40mm-vien-thep-day-cao-su-den-thumb-600x600.png" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -118,7 +118,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/apple-watch-s6-40mm-vien-nhom-day-cao-su-do-thumb-600x600.png" alt="">
+							<img src="../pictures/products/apple-watch-s6-40mm-vien-nhom-day-cao-su-do-thumb-600x600.png" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -133,7 +133,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/apple-watch-s6-lte-40mm-vien-thep-day-thep-den-thumb-1-600x600.png" alt="">
+							<img src="../pictures/products/apple-watch-s6-lte-40mm-vien-thep-day-thep-den-thumb-1-600x600.png" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -148,7 +148,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/s6-lte-40mm-vien-nhom-day-cao-su-do-thumb-1-600x600.png" alt="">
+							<img src="../pictures/products/s6-lte-40mm-vien-nhom-day-cao-su-do-thumb-1-600x600.png" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -163,7 +163,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/s6-lte-44mm-vien-nhom-day-cao-su-xanh-thumb-1-600x600.png" alt="">
+							<img src="../pictures/products/s6-lte-44mm-vien-nhom-day-cao-su-xanh-thumb-1-600x600.png" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -178,7 +178,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/apple-watch-s7-gps-41mm-vang-thumb-1-2-660x600.jpg" alt="">
+							<img src="../pictures/products/apple-watch-s7-gps-41mm-vang-thumb-1-2-660x600.jpg" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -193,7 +193,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/samsung-galaxy-watch-4-44mm-thumb-02-600x600.jpg" alt="">
+							<img src="../pictures/products/samsung-galaxy-watch-4-44mm-thumb-02-600x600.jpg" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -208,7 +208,7 @@
 				<div class="product-item">
 					<div class="product-top">
 						<a href="" class="product-thumb">
-							<img src="../pictures/smw/garmin-fenix-6-day-silicone-thumb-1-1-600x600.jpg" alt="">
+							<img src="../pictures/products/garmin-fenix-6-day-silicone-thumb-1-1-600x600.jpg" alt="">
 						</a>
 						<a href="" class="order-now">Đặt trước ngay</a>
 					</div>
@@ -235,7 +235,7 @@
 				  <h3>Quick Links</h3>
 				  <nav>
 					<ul>
-					  <li><a href="../user/index.php">Home</a></li>
+					  <li><a href="../index.php">Home</a></li>
 					  <li><a href="../user/iphone.php">Điện thoại</a></li>
 					  <li><a href="../user/hoidap24h.php">Tin tức</a></li>
 					</ul>
