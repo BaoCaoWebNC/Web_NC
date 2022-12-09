@@ -41,9 +41,9 @@ session_start();
                                 <i class="fs-5 fa-solid fa-rectangle-list"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Danh mục</span> </a>
                         </li>
                         <li>
-                            <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-2 mt-3 align-middle text-white">
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-2 mt-3 align-middle text-white">
                                 <i class="fs-5 fab fa-product-hunt"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Sản Phẩm</span> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                 <li class="w-100">
                                     <a href="products/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>

@@ -85,7 +85,7 @@ session_start();
                                 <i class="fs-5 fa-solid fa-newspaper"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Tin tức</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="../newrs/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                    <a href="../news/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>
                                 <li class="w-100">
                                     <a href="../news/them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>

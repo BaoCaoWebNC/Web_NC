@@ -16,11 +16,34 @@ session_start();
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
-    <title>Admin | Danh mục</title>
+    <title>Admin | Thêm tin tức</title>
 </head>
 <body>
     <?php
     if(isset($_SESSION["name"])) {
+    ?>
+    <?php
+        require "../../config/dbConnection.php";
+        if (isset($_POST["sbm"]))
+        {
+            //Lăy dữ Liệu trên form => Lưu vào bỉển
+            $ten_tintuc = $_POST["ten_tintuc"];
+            $noidung_tintuc = $_POST["noidung_tintuc"];
+            $image = $_FILES['image']['name'];
+            $image_tmp = $_FILES['image']['tmp_name'];
+            $sql = "INSERT INTO news (ten_tintuc, noidung_tintuc, anh_tintuc) VALUES ('$ten_tintuc','$noidung_tintuc','$image')";
+            if (mysqli_query($conn, $sql))
+            {
+                move_uploaded_file($image_tmp, "../../kno/$image");
+                header('location:danhsach.php');
+            }
+            else {//Lỗỉ
+                $result = "Lỗi thêm mới" . mysqli_error($conn);
+                echo "<script type='text/javascript'>alert('$result');</script>";
+            }
+        }
+        
+        mysqli_close($conn);
     ?>
     <div class="container-fluid">
         <div class="row flex-nowrap">
@@ -43,7 +66,7 @@ session_start();
                             </ul>
                         </li>
                         <li>
-                            <a href="danhsach.php" class="nav-link px-2 mt-3 align-middle text-white">
+                            <a href="../categories/danhsach.php" class="nav-link px-2 mt-3 align-middle text-white">
                                 <i class="fs-5 fa-solid fa-rectangle-list"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Danh mục</span> </a>
                         </li>
                         <li>
@@ -63,10 +86,10 @@ session_start();
                                 <i class="fs-5 fa-solid fa-newspaper"></i> <span class="ms-1 d-none d-sm-inline fw-bold">Tin tức</span> </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="../news/danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
+                                    <a href="danhsach.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Danh sách</span></a>
                                 </li>
                                 <li class="w-100">
-                                    <a href="../news/them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>
+                                    <a href="them.php" class="nav-link px-4 text-white"> <span class="d-none d-sm-inline">Thêm mới</span></a>
                                 </li>
                             </ul>
                         </li>
@@ -90,72 +113,28 @@ session_start();
             </div>
             <div class="col py-3">
                 <div>
-                    <h3>DANH MỤC SẢN PHẨM</h3>
-                    <div class="card-body">
-                        <form action ="them.php" method="POST" autocomplete="off">
-                            <label for="tendm">Tên danh mục:</label>
-                            <input type="text" name="ten_dm" class="form-control" id="tendm" require>
-                            <button name="sbm" class="btn btn-primary my-2" type="submit">Thêm</button>
-                        </form>
-                    </div>
+                    <h3>THÊM TIN TỨC</h3>
                 </div>
-                <?php
-                    require "../../config/dbConnection.php";
-                    $sql = "SELECT * FROM dmsanpham";
-                    $query = mysqli_query($conn, $sql);
-                ?>
-                <table class="table table-striped table-bordered" id="sortTable">       
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Tên danh mục</th>
-                            <th>Tác vụ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            while($row = mysqli_fetch_assoc($query)){ 
-                        ?>
-                        <tr>
-                            <td><?php echo $row['id_dm']; ?></td>
-                            <td><?php echo $row['ten_dm']; ?></td>
-                            <td>
-                                <button href="" class = "btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal" data-whatever="<?php echo $row['id_dm']; ?>">Sửa</button>
-                                <a href="xoa.php?id_dm=<?php echo $row['id_dm']; ?>" onclick="return confirm('Bạn có muốn xóa thông tin này không?');" class = "btn btn-primary">Xóa</a>
-                            </td>
-                        </tr>
-                        <?php 
-                            }
-                            mysqli_close($conn);
-                        ?>
-                    </tbody>
-                </table>
-                <script>
-                $('#sortTable').DataTable();
-                </script>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="updateModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sửa danh mục</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action ="sua.php" method="POST" autocomplete="off">
-                    <div class="mb-3">
-                        <label for="txt_id_dm" class="col-form-label">ID:</label>
-                        <input type="text" name="txt_id_dm" class="form-control id-input" id="txt_id_dm" readonly = "readonly">
-                    </div>
-                    <div class="mb-3">
-                        <label for="txt_ten_dm" class="col-form-label">Tên danh mục mới:</label>
-                        <input type="text" name="txt_ten_dm" id="txt_ten_dm" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <input onclick="return confirm('Bạn có muốn sửa thông tin này không?');" class = "btn btn-primary" type = "submit" name = "btnSave" value = "Lưu">
-                    </div>
+                <div class="card-body">
+                    <form method="POST" autocomplete="off" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="">Tên tin tức</label>
+                            <input type="text" name="ten_tintuc" class="form-control" require>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Nội dung tin tức</label> <br>
+                            <textarea cols="50" rows="5" name="noidung_tintuc" class="form-control" require></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Ảnh tin tức</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile" name="image">
+                                <label class="custom-file-label" for="customFile">Chọn file...</label>
+                            </div>
+                        </div>
+                        <button name="sbm" class="btn btn-primary" type="submit">Thêm</button>
                     </form>
                 </div>
             </div>
@@ -165,13 +144,13 @@ session_start();
     }else echo "<h1>Hãy đăng nhập trước!</h1>";
     ?>
     <script>
-        $(document).ready(function(){
-            $('#updateModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget);
-            var id = button.data('whatever');
-            $('#txt_id_dm').val(id);
-            })
-        })
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            if(fileName == ""){
+                fileName = "Chọn file...";
+            }
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
