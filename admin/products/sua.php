@@ -151,7 +151,7 @@ session_start();
 
                         <div class="form-group">
                             <label for="">Giá KM</label>
-                            <input type="text" name="gia_km" class="form-control" require value ="<?php echo $row_up['gia_km']; ?>">
+                            <input type="text" name="gia_km" class="form-control" value ="<?php echo $row_up['gia_km']; ?>">
                         </div>
 
                         <div class="form-group">

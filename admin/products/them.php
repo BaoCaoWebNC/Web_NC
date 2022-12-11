@@ -145,7 +145,7 @@ session_start();
 
                         <div class="form-group">
                             <label for="">Giá KM</label>
-                            <input type="text" name="gia_km" class="form-control" require>
+                            <input type="text" name="gia_km" class="form-control">
                         </div>
 
                         <div class="form-group">
